@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to calculate determinant of a 2x2 matrix
 float determinant(float a, float b, float c, float d) {
     return a * d - b * c;
 }

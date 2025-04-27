@@ -3,10 +3,8 @@
 
 #define MAX_FIB 100
 
-// Global array to store computed Fibonacci numbers
 long long fib_cache[MAX_FIB];
 
-// Initialize the cache with -1 (indicating not computed)
 void init_cache() {
     for (int i = 0; i < MAX_FIB; i++) {
         fib_cache[i] = -1;
@@ -32,7 +30,6 @@ long long fibonacci(int n) {
         return fib_cache[n];
     }
 
-    // Compute and store the value
     fib_cache[n] = fibonacci(n - 1) + fibonacci(n - 2);
     return fib_cache[n];
 }
